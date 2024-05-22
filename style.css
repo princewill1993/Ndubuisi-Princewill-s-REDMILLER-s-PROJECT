@@ -1,0 +1,1260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all linear 0.2ms;
+    /* font-family: ; */
+}
+
+:root{
+
+    
+    --primary-color: #ffffff;
+    --primary-color-2: #f8f9fc;
+   
+    --secondary-color-1: #182d35;
+    --secondary-color-2: #2c3038;
+    --secondary-color-3: #93120f;
+    --secondary-color-4: #555a64;
+    --red-stories-textcolor: #43aec1;
+    --red-stories-hovercolor: #43aec1;
+    --red-stories-backgroundcolor: #ebf5f7;
+    --biller-stories-color: #dc3949;
+    --biller-stories-backgroundcolor: #fdebed;
+    --border-color1 : #f4f5f8;
+    --footer-color: #aeb4b7;
+    --border-color: #eaedf2;
+    --signin-page-color: #212121;
+    --form-page-color: #181c32;
+
+    
+    --spacing-1: 40px;
+    --spacing-2: 32px;
+    --spacing-3: 28px;
+    --spacing-4: 22px;
+    --spacing-5: 15px;
+
+    --font-size-1: 40px;
+    --font-size-2: 32px;
+    --font-size-4: 28px;
+    --font-size-5: 22px;
+    --font-size-6: 18px;
+    --font-size-7: 15px;
+    --font-size-8: 14px;
+    --font-size-9: 13.5px;
+
+  }
+
+
+
+.container{
+    width: 1240px;
+    max-width: 87%;
+    margin: 0 auto;
+
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    /* padding-top: 20px; */
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 100;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .navbar__logo span a{
+    display: flex;
+    color: var(--secondary-color-2);
+    font-size: var(--font-size-6);
+    text-decoration: none;
+    font-family: nunito;
+  }
+
+  .navbar__links{
+    display: flex;
+    font-family: nunito;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    position: relative;
+    gap: 50px;
+  }
+  
+  
+  .products__blog{
+    justify-content:right;
+    display: flex;
+    gap: 40px;
+    font-family: nunito;
+  }
+
+  .navbar__links a{
+    gap: 40px;
+    color: var(--secondary-color-1);
+    /* display: flex; */
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: var(--font-size-6);
+    font-weight: 500;
+
+  }
+
+  .signin__link a{
+    display: flex;
+    padding: 10px 10px;
+    border: none solid ;
+    /* position: relative; */
+  }
+
+  .navbar  .signin__links{
+    position: absolute;
+    padding: 10px;
+    right:120px;
+    top:-2px;
+    
+    
+  }
+
+  .navbar .sign_in {
+    position: absolute;
+    top:-6px;
+    left: -78px;
+
+  }
+
+  .navbar .create_account {
+    position: absolute;
+    top:-6px;
+
+  }
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-weight: bold;
+}
+
+.btn--primary {
+  border-radius: 20px 0 0 20px;
+  background-color:var(--primary-color);
+  border: 1px solid var(--footer-color);
+  color: var(--secondary-color-3);
+}
+
+.btn--primary:hover {
+  background-color: #000;
+  color: var(--primary-color);
+
+}
+
+.btn--secondary {
+  background-color:var(--secondary-color-3);
+  border-radius: 0 20px 20px 0;
+  color: var(--primary-color);
+  padding-bottom: 12px;
+  width: 140px;
+  font-weight: 400;
+}
+
+.btn--secondary:hover {
+  background-color: rgb(88, 7, 7);
+}
+
+
+/* MEDIA QUERRY FOR NAVBAR */
+
+@media (max-width: 1024px) {
+  .navbar__links{
+    display: none;
+  }
+}
+
+
+
+
+
+  /* HOME SECTION */
+
+  .home{
+    height: 90vh;
+  }
+
+  .homeimg__partner{
+    display: flex;
+  }
+
+  .homeimg__partner .left,
+  .homeimg__partner .right{
+    width: 50%;
+  }
+
+  .homeimg__partner .image__left{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .homeimg__partner{
+    display: flex;
+    height: 100%;
+  }
+
+
+  .label-text{
+    font-size: var(--font-size-1);
+    color: var(--secondary-color-2);
+    padding: 40px 0;
+  }
+
+  .subtitle-text{
+    text-align: center;
+    color: var(--secondary-color-4);
+    font-size: var(--font-size-5);
+    padding: 10px 0;
+  }
+
+  .homeimg__partner .right{
+    background-color: var(--secondary-color-2);
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .homeimg__partner .label-text{
+    color: var(--primary-color);
+    font-family: nunito;
+    font-size: var(--font-size-2);
+  }
+
+  .homeimg__partner .label-text .redbiller_text{
+    font-weight: 400;
+    padding: 15px 0;
+  }
+
+  .homeimg__partner .label-text .partnerleverage__text{
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  .homeimg__partner .right .right-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .homeimg__partner .right .singin__btn{
+    position: relative;
+
+    
+  }
+
+  .homeimg__partner .right .sign__in{
+    width: 110px;
+    padding: 20px 28px;
+  border-radius: 30px 0 0 30px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color-3);
+  border: 1px solid var(--border-color);
+  position: absolute;
+  cursor: pointer;
+  font-size: var(--font-size-8);
+     font-weight: 350;
+  }
+
+  .homeimg__partner .right .create__account{
+    padding: 21px 28px;
+    border: 1px solid var(--border-color);
+    border-radius: 0 30px 30px 0;
+    width: 180px;
+    background-color: var(--secondary-color-3);
+    color: var(--primary-color);
+    border: none;
+    position: absolute;
+    left: 110px;
+    cursor: pointer;
+    font-weight: 350;
+    font-size: var(--font-size-8);
+  }
+
+  .homeimg__partner .right .sign__in:hover{
+    background-color: #000;
+    border: none;
+    color: var(--primary-color);
+  }
+  
+  .homeimg__partner .right .create__account:hover{
+    background-color: rgb(88, 7, 7);
+    border: 1px solid var(--secondary-color-3);
+  }
+
+/* MEDIA QUERRY FOR HOME SECTION */
+@media (max-width: 1024px) {
+
+  .home {
+    height: 70vh;
+
+  }
+  .homeimg__partner{
+    flex-direction: column;
+  }
+
+  .homeimg__partner .left,
+  .homeimg__partner .right{
+    width: 100%;
+  }
+
+   .homeimg__partner .right{
+    align-items: center;
+    height: 100%;
+  }
+
+
+    .homeimg__partner .left{
+      display: none;
+    }
+
+
+  .homeimg__partner .label-text .partnerleverage__text {
+    font-size: var(--font-size-2);
+  }
+
+
+    .homeimg__partner .right .label-text h6{
+      display: none;
+    }
+  
+
+    .homeimg__partner .right .singin__btn{
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+
+  /* hello section */
+
+  .hello__page{
+    background-color: var(--primary-color-2);
+  }
+
+  .hello__page .hello__wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 130px 0;
+  }
+
+  .hello__page .label-text{
+    font-family: nunito;
+    /* padding: 0 10em; */
+    font-size: var(--font-size-1);
+    text-align: center;
+    /* border: 1px solid red; */
+    line-height: .12;
+  }
+
+  .hello__page .subtitle-text{
+    font-family: nunito;
+    font-weight: 300;
+    /* border: 1px solid black; */
+  }
+
+
+
+
+
+  /* AIRTIME SECTION */
+
+  .airtime__page{
+    background-color: var(--primary-color);
+    display: flex;
+    /* background-color: red; */
+  }
+
+  .airtime__page .airtime__call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+  }
+
+  .airtime__page .airtime__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.airtimelabel-text {
+  font-size: var(--font-size-1);
+  font-family: "Nunito";
+  font-weight: 600;
+}
+
+.airtime__page .airtime__call {
+  gap: 100px;
+}
+
+.right__img{
+  padding: 10em 0;
+}
+
+.airtime__page .left__services{
+  font-size: var(--font-size-7);
+  font-family: "nunito";
+  font-weight: 650;
+  color: var(--secondary-color-2);
+  display: flex;
+  gap: 40px;
+  padding-top: 1em;
+}
+
+.airtime__page .left__services .first__unit, .airtime__page .left__services .second__unit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.airtime__page .left__services .single__unit {
+  display: flex;
+  gap: 15px;
+}
+
+.airtime__page .left__services .single__unit span {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf5f1;
+  color: var(--secondary-color-3);
+
+}
+
+.airtime__page .desc {
+  font-size: var(--font-size-5);
+  font-weight: 300;
+  font-family: "nunito";
+  color: var(--secondary-color-4);
+  padding: 1em 0;
+}
+
+.airtime__page .airtime__services .airtimeservices__rechargesupport{
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color-2);
+}
+
+
+.airtime__page .left .airtime__generation{
+  font-family: "nunito";
+  color: var(--secondary-color-2);
+  font-size: var(--font-size-7);
+}
+
+.airtimegene__arrow{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.airtime__arrow{
+  color: var(--secondary-color-3);
+  font-size: var(--font-size-1);
+  margin-top: 10px;
+}
+
+.airtime__page .airtime__wrapper .left .leftservices__animate .first__unit{
+    animation-name: leftservices__animate;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.0009s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes leftservices__animate{
+  0%{
+  
+    transform: translateX(300%);
+    opacity: 0;
+  }
+
+50%{
+   
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100%{
+   
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.airtime__page .airtime__wrapper .left .leftservices__animate .first__unit .singleunit__animate{
+  animation-name: leftservices__animate;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.0009s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes singleunit__animate{
+  0%{
+  
+    transform: translateX(300%);
+    opacity: 0;
+  }
+
+50%{
+   
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100%{
+   
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.airtime__page .airtime__wrapper .left .leftservices__animate .second__unit{
+  animation-name: leftservices__animate;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.0009s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes leftservices__animate{
+0%{
+
+  transform: translateX(300%);
+  opacity: 0;
+}
+
+50%{
+ 
+  transform: translateX(0);
+  opacity: 1;
+}
+
+100%{
+ 
+  transform: translateX(0);
+  opacity: 1;
+}
+}
+
+
+
+/* MEDIA QUERRY FOR AIRTIME SECTION */
+
+@media (max-width : 1024px) {
+  .airtime__page .airtime__wrapper{
+    flex-direction: column;
+    padding: 5em 0;
+  }
+
+  .airtime__page .airtime__wrapper .left,
+  .airtime__page .airtime__wrapper .right__img{
+    width: 100%;
+  }
+
+  .airtime__page .airtime__wrapper .right__img{
+    padding: 1em 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .airtime__page .airtime__wrapper .left .left__services{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  .airtime__page .airtime__wrapper .left .left__services{
+    flex-direction: column;
+    width: 100%;
+    padding: 5em 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .airtime__page .airtime__wrapper .left .airtimelabel-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
+  /* funding section */
+
+  .wallet__funding{
+    background-color: var(--primary-color-2);
+    height: auto 0;
+    width: 100%;
+    /* background-color: blue; */
+  }
+
+  .wallet__funding .wallet__wrapper{
+    padding: 130px 0;
+    display: flex;
+    /* position: relative; */
+    gap: 40px;
+
+  }
+
+  .leftbet__company{
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    padding: 10em 10em 10em 0;
+    position: relative;
+   }
+
+   .wallet__funding .wallet__wrapper .naira__bet{
+    position: absolute;
+    right: 320px;
+    top: 85px;
+    height: 160px;
+    width: 160px;
+   }
+
+  .wallet__funding .wallet__wrapper .naija__bet{
+    position: absolute;
+    top: 30px;
+    left: 90px;
+  }
+
+  .wallet__funding .wallet__wrapper .bet__9ja{
+    position: absolute;
+    bottom: 27px;
+    left: 130px;
+  }
+
+  .wallet__funding .wallet__wrapper .cloud__bet{
+    position: absolute;
+    right: 80px;
+    top: 130px;
+  }
+
+  .wallet__funding .leftbet__company .naira__million{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+   
+  }
+
+  .wallet__funding .wallet__wrapper .merry__bet{
+    position: absolute;
+    right: 20px;
+    bottom: 2px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .wallet__funding .wallet__wrapper .bet__lion{
+    position: absolute;
+    bottom: 70px;
+    right: 260px;
+    height: 70px;
+    width: 70px;
+  }
+
+.wallet__wrapper .rightwallet__funding .rightwallet__services{
+  gap: 20px;
+  font-family: nunito;
+  color: var(--secondary-color-2);
+  font-weight: 450;
+  font-size: var(--font-size-7);
+}
+
+
+
+
+.rightwallet__funding h2{
+  color: var(--secondary-color-2);
+  font-weight: 380;
+  font-size: var(--font-size-1);
+}
+
+.rightwallet__funding h5{
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: 300;
+}
+
+
+  .rightwallet__funding{
+    font-family: nunito;
+    color: var(--secondary-color-4);
+    font-size: var(--font-size-6);
+    
+  }
+
+  .wallet__funding .wallet__wrapper .rightwallet__services .single__unit{
+    display: flex;
+    gap: 1em;
+    padding: 10px 0;
+  }
+
+  .wallet__wrapper .rightwallet__services .single__unit span{
+
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf5f1;
+    color: var(--secondary-color-3);
+  }
+  
+
+/* ANIMATION */
+
+  .wallet__funding .wallet__wrapper .rightwalletservices__animate{
+    animation-name: rightwalletservices__animate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.0009s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes rightwalletservices__animate{
+    0%{
+    
+      transform: translateX(300%);
+      opacity: 0;
+    }
+  
+  50%{
+     
+      transform: translateX(0);
+      opacity: 0.8;
+    }
+  
+    100%{
+     
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .wallet__funding .wallet__wrapper .rightwallet__funding .single__animate{
+    animation-name: single__animate;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.0005s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes single__animate{
+    0%{
+    
+      transform: translateX(300%);
+      opacity: 0;
+    }
+  
+  50%{
+     
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    100%{
+     
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  /* MEDIA QUERRY FOR FUNDING SECTION */
+
+  @media (max-width : 1024px) {
+    .wallet__funding .wallet__wrapper {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+      align-self: center;
+    }
+
+    .wallet__funding .wallet__wrapper .leftbet__company .rightwallet__funding{
+      align-items:flex-end;
+    }
+  }
+  
+
+  @media (max-width : 1024px) {
+    .wallet__funding .wallet__wrapper .leftbet__company{
+      flex-direction: column;
+      width: 100%;
+    }
+  }  
+ 
+  
+  @media (max-width = 700px) {
+    .airtime__page .airtime__wrapper .left .left__services{
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+
+  /* STORY SECTION */
+  .story__section{
+    background-color: var(--primary-color-1);
+    padding: 8rem 0;
+  }
+
+  .story__section .story__cardwrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    transition: all 500ms ease-in-out;
+  }
+
+  /* .story__section .story__cardwrapper .img{
+    width: 100%;
+
+  } */
+
+  .story__section .story__cardwrapper .card{
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+  }
+
+  .story__section .story__cardwrapper  h6{
+    font-size: var(--font-size-4);
+    font-family: nunito;
+    font-weight: 400;
+  }
+
+  .story__section .story__card .cardmiddle__text{
+    padding: 50px 50px;
+    font-family: nunito;
+  }
+
+  .story__section .cardmiddle__text p{
+    color: var(--secondary-color-4);
+    padding-top: 15px;
+  }
+
+
+  .story__section .story__card:hover{
+    transition-property: all;
+   transition-duration: 100ms;
+   transition-timing-function: linear;
+
+   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .story__section .story__card .story__card__redstories{
+   border-top: 1px solid var(--border-color);
+   font-size: var(--font-size-7);
+   padding: 15px 50px;
+   display: flex;
+   justify-content: space-between;
+   align-self: center;
+   align-content: center;
+   font-family: nunito;
+  }
+
+
+  .story__section .story__card__redstories .card__date{
+    color: var(--secondary-color-4);
+    align-self: center;
+  }
+
+  .story__section .story__card .billers__redstories{
+    color: var(--secondary-color-3);
+    background-color:#f1dddf;
+    font-family: nunito;
+    cursor: pointer;
+  }
+
+  .story__section .card__text .card__redstories{
+    color: var(--red-stories-textcolor);
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .story__section .story__card__redstories .card__date{
+    color: var(--footer-color);
+  }
+
+  .story__card .story__card__redstories h5{
+    width: 110px;
+    height: 32px;
+    align-self: center;
+    border-radius: 20px;
+    background-color: #cfe9ed;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .story__card .story__card__redstories .billers__redstories{
+    padding: 7px 0px;
+  }
+
+  .story__section .story__card__redstories h5:hover{
+    background-color:var(--secondary-color-3);
+    color: var(--primary-color);
+  }
+
+  .story__section .story__card__redstories .card__redstories:hover{
+    background-color: var(--red-stories-hovercolor);
+    cursor: pointer;
+  }
+
+  .story__section .cardmiddle__text .read__story{
+    color: var(--secondary-color-3);
+    padding-top: 15px;
+    font-size: var(--font-size-7);
+    display: flex;
+  }
+
+  .story__section .story__card:hover{
+    /* display: flex; */
+    transition: all 100ms ease-in-out;
+  }
+
+  /* STORY SECTION MEDIA QUERRY */
+
+@media (max-width: 1024px) {
+ .story__content .story__cardwrapper{
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .story__content .story__cardwrapper{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+    width: 100%;
+  }
+ }
+
+
+
+  /* footer section */
+
+  .footer{
+    background-color: var(--secondary-color-1);
+    width: 100%;
+    height: 0 auto;
+    padding: 50px 0;
+  }
+
+  .footer .footer__card{
+    gap: 1rem;
+    display: grid;
+    padding: 1rem 0;
+    /* font-size: var(--font-size-5); */
+    grid-template-columns: repeat(5, 1fr);
+    font-size: var(--font-size-7);
+    color: var(--primary-color);
+    
+   }
+
+   .footer .footer__card .footer__information{
+    font-family: nunito;
+   }
+
+   .footer__card .footer__information .logo__img{
+    color: var(--primary-color);
+    font-family: nunito;
+    font-size: var(--font-size-5);
+   }
+
+   .footer__card .footer__information a{
+    color: var(--footer-color);
+    text-decoration: none;
+    font-family: nunito;
+   }
+
+   .footer__line .Redbiller__socialmedia .socialmedia__right .socials ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    color: var(--primary-color);
+   }
+
+   .footer__line .Redbiller__socialmedia .socialmedia__right .socials__li a{
+    color: var(--primary-color);
+   }
+
+   .footer__line .Redbiller__socialmedia{
+    display: flex;
+    justify-content: space-between;
+   }
+
+
+   .Redbiller__socialmedia .redmiller__left{
+    color: var(--primary-color);
+    font-family: nunito;
+    font-size: var(--font-size-7);
+    
+   }
+
+   .footer .footer__line{
+    border-top: 1px solid var(--secondary-color-4);
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    
+   }
+
+   .footer .footer__line .socials .socials__li{
+    color: var(--primary-color);
+    width: 40%;
+   }
+
+
+   @media (max-width: 900px) {
+    .Redbiller__socialmedia{
+      /* grid-template-columns: repeat(3, 1fr); */
+      display: flex;
+      flex-direction: column;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      
+     }
+   }
+
+
+@media (max-width: 900px) {
+  .footer .footer__card{
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer .footer__card{
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+  }
+}
+   
+   /* @media (max-width: 900px) {
+     .story__content .story__cardwrapper{
+       grid-template-columns: repeat(1, 1fr);
+       flex-direction: column;
+       width: 100%;
+     }
+    } */
+
+  
+
+   /* SIGNIN__PAGE */
+
+   .signin__page {
+    width: 100%;
+    background-color: var(--signin-page-color);
+    padding: 15em 0;
+    display: flex;
+    justify-content: center;
+   }
+
+   .signin__page  .form__wrapper{
+    padding: 4em 4em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 35em;
+    width: 30em;
+   }
+
+
+   .signin__page .form__wrapper .formsignin__logo img{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+   }
+
+   .signin__page .form__wrapper .formsignin__logo{
+    display: flex;
+   }
+
+   .signin__page .form__wrapper .formsignin__logo .left{
+    width: 70%;
+   }
+
+   .signin__page .form__wrapper .formsignin__logo{
+    gap: -2em;
+   }
+
+   .signin__page .form__wrapper .formsignin__logo .right{
+    width: 30%;
+    
+   }
+
+   .signin__page .form__wrapper .formmid__part .icon__redbiller {
+    display: flex;
+  
+   }
+
+   .signin__page .form__wrapper .formmid__part .icon__redbiller{
+    justify-content: center;
+    color: var(--secondary-color-1);
+    gap: 1em;
+    width: 250px;
+    height: 45px;
+    background-color: #f5f5f5;
+    border-radius: 20em;
+    font-size: var(--font-size-7);
+    align-items: center;
+    font-weight: 400;
+    border: 1px solid var(--border-color);
+   }
+
+   .signin__page .form__wrapper .formmid__part .formmid__labeltext{
+    justify-content: center;
+    display: flex;
+    font-family: "nunito";
+    font-size: var(--font-size-8);
+    padding-bottom: 1em;
+   }
+
+   .signin__page .form__wrapper .formsignin__logo .left h1{
+    font-family: "nunito";
+    color: var(--signin-page-color);
+   }
+
+   .signin__page .form__wrapper .formsignin__logo .left .form__createacct{
+    color: var(--secondary-color-3);
+    text-decoration: none;
+   }
+   
+   .signin__page .form__wrapper .formsignin__logo .left .form__createacct:hover{
+    color: var(--biller-stories-color);
+   }
+
+   .signin__page .form__wrapper .formsignin__logo .left .signin__label{
+    display: flex;
+    gap: 5px;
+    font-family: nunito;
+    font-weight: 800;
+    color: var(--footer-color);
+    padding-bottom: 3em;
+    padding-top: 0.5em;
+   }
+
+   .signin__page .form__wrapper .formmid__part .formmid__iconlik{
+    padding-bottom: 1.5em;
+    justify-content: center;
+    display: flex;
+   }
+
+   .signin__page .form__wrapper .formmid__part .formmid__iconlik .fa-lock{
+    color: #26c2bf;
+   }
+
+   .signin__page .input__section {
+    padding: -5px 0;
+   }
+
+   .signin__page .input__section .input__wrapper label{
+    /* border: 2px solid greenyellow; */
+    font-family: "nunito";
+    font-weight: 800;
+    
+   }
+
+   .signin__page .input__section .input__wrapper input{
+    border: 1px solid var(--border-color);
+    width: 27em;
+    height: 4em;
+    border-radius: 10px;
+  
+   }
+
+   .signin__page .input__section .input__wrapper .submit__button{
+    background-color: var(--secondary-color-3);
+    width: 27em;
+    height: 4em;
+    border: none;
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: nunito;
+    font-size: var(--font-size-9);
+    cursor: pointer;
+   }
+
+   .signin__page .input__section .input__wrapper .submit__button:hover{
+    background-color: rgb(93, 5, 5);
+   }
+
+
+
+
+  .sticky__div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    padding-bottom: -5em;
+    position: relative;
+   
+   }
+   
+
+  .redbiller__meeting{
+    width: 21em;
+    height: 4.5em;
+    border-radius: 40px;
+    background-color: var(--secondary-color-3);
+    color: var(--primary-color);
+    font-family: nunito;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    padding: 8px 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+   }
+  
