@@ -303,7 +303,7 @@ header {
   }
 
 /* MEDIA QUERRY FOR HOME SECTION */
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 
   .home {
     height: 70vh;
@@ -576,7 +576,7 @@ header {
 
 /* MEDIA QUERRY FOR AIRTIME SECTION */
 
-@media (max-width : 1024px) {
+@media (max-width : 900px) {
   .airtime__page .airtime__wrapper{
     flex-direction: column;
     padding: 5em 0;
@@ -806,7 +806,7 @@ header {
 
   /* MEDIA QUERRY FOR FUNDING SECTION */
 
-  @media (max-width : 1024px) {
+  @media (max-width : 900px) {
     .wallet__funding .wallet__wrapper {
       flex-direction: column;
       width: 100%;
@@ -821,7 +821,7 @@ header {
   }
   
 
-  @media (max-width : 1024px) {
+  @media (max-width : 900px) {
     .wallet__funding .wallet__wrapper .leftbet__company{
       flex-direction: column;
       width: 100%;
@@ -958,7 +958,7 @@ header {
 
   /* STORY SECTION MEDIA QUERRY */
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
  .story__content .story__cardwrapper{
   grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
@@ -966,7 +966,7 @@ header {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   .story__content .story__cardwrapper{
     grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
