@@ -1168,9 +1168,10 @@ header {
    .signin__page {
     width: 100%;
     background-color: var(--signin-page-color);
-    padding: 15em 0;
+    padding: 7.5em 0;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
    }
 
    .signin__page  .form__wrapper{
