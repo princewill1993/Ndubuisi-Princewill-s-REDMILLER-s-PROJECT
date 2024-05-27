@@ -30,23 +30,55 @@
             >
           </span>
         </div>
+
         <div class="navbar__links">
           <div class="products__blog"> 
             <a href="#">Products</a>
             <a href="#">Blog</a>
-            
-          </div>  
+           
+           
+          </div> 
+
           <div class="signin__links">
-  
+           
               <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
               <button class="btn btn--secondary create_account"> Create account</button>
+            
   
           </div>
+
         </div>
-           
-        
+
+                    <!-- Handburger -->
+                    <div class="navbar__menuicon">
+                      <i class="fa-solid fa-bars fast menu-icon"></i>
+                    </div>
+
       </nav>
     </header>
+           <!-- insidevHandburger -->
+    <section class="handburger__section">
+
+      <div class="handburger__container">
+        <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
+        <button class="btn btn--secondary create_account"> Create account</button>
+      </div>
+    </section>
+
+     <!-- Mobile menu -->
+
+    <!-- <div class="mobile__menu">
+      <div>
+        
+        <div class="signin__links">
+          <span class="menu_icon"> <i class="fa-solid fa-bars fast"></i></i></span>  
+          <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
+          <button class="btn btn--secondary create_account"> Create account</button>
+
+      </div>
+      </div>
+        
+      </div>  -->
 
     <!-- home section -->
 
@@ -365,6 +397,16 @@
         </div>
        </div>
     </section>
+
+
+    <script>
+      let menuIcon = document.querySelector(".menu-icon");
+      let hamburgerMenu = document.querySelector(".handburger__section");
+
+      menuIcon.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("open-menu");
+      })
+    </script>
 
    
   </body>
