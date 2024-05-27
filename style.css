@@ -1287,7 +1287,7 @@ header {
 
    .signin__page .input__section .input__wrapper .submit__button{
     background-color: var(--secondary-color-3);
-    width: 25em;
+    width: 22em;
     height: 4em;
     border: none;
     border-radius: 5px;
