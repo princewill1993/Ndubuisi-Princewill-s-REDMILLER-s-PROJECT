@@ -1168,7 +1168,7 @@ header {
    .signin__page {
     width: 100%;
     background-color: var(--signin-page-color);
-    padding: 6.9em 0;
+    padding: 15em 0;
     display: flex;
     justify-content: center;
    }
@@ -1177,7 +1177,7 @@ header {
     padding: 4em 4em;
     background-color: #ffffff;
     border-radius: 10px;
-    /* height: 35em; */
+    height: 35em;
     width: 30em;
    }
 
@@ -1287,7 +1287,7 @@ header {
 
    .signin__page .input__section .input__wrapper .submit__button{
     background-color: var(--secondary-color-3);
-    width: 27em;
+    width: 20em;
     height: 4em;
     border: none;
     border-radius: 5px;
@@ -1296,13 +1296,12 @@ header {
     font-family: nunito;
     font-size: var(--font-size-9);
     cursor: pointer;
+    
    }
 
    .signin__page .input__section .input__wrapper .submit__button:hover{
     background-color: rgb(93, 5, 5);
    }
-
-
 
 
   .sticky__div{
