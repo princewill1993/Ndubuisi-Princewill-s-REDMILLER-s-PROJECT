@@ -8,8 +8,9 @@
       src="https://kit.fontawesome.com/288912a1bc.js"
       crossorigin="anonymous"
     ></script>
-
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
 
@@ -19,35 +20,41 @@
     <header>
       <nav class="navbar container" id="navbar">
         <div class="navbar__logo">
-          <span>
-            <a href="#">
-              <img
-                src="redbiller.png"
-                alt="redbiller logo"
-                height="35"
-                width="35"
-              /><b>edbiller <sup>TM</sup></b></a
-            >
-          </span>
+
+          <div data-aos="fade-up"
+          data-aos-duration="2000"
+     data-aos-anchor-placement="bottom-center">
+
+     <span>
+       <a href="#">
+         <img
+           src="redbiller.png"
+           alt="redbiller logo"
+           height="35"
+           width="35"
+         /><b>edbiller <sup>TM</sup></b></a
+       >
+     </span>
         </div>
+        </div>
+        
 
-        <div class="navbar__links">
-          <div class="products__blog"> 
-            <a href="#">Products</a>
-            <a href="#">Blog</a>
-           
-           
-          </div> 
-
-          <div class="signin__links">
-           
-              <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
-              <button class="btn btn--secondary create_account"> Create account</button>
-            
+          <div class="navbar__links ">
+            <div class="products__blog"> 
+              <a href="#">Products</a>
+              <a href="#">Blog</a>
+             </div> 
+  
+            <div class="signin__links">
+             
+                <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
+                <button class="btn btn--secondary create_account"> Create account</button>
+              
+    
+            </div>
   
           </div>
-
-        </div>
+        
 
                     <!-- Handburger -->
                     <div class="navbar__menuicon">
@@ -65,20 +72,6 @@
       </div>
     </section>
 
-     <!-- Mobile menu -->
-
-    <!-- <div class="mobile__menu">
-      <div>
-        
-        <div class="signin__links">
-          <span class="menu_icon"> <i class="fa-solid fa-bars fast"></i></i></span>  
-          <a href="signin.html"><button class="btn btn--primary sign_in"> <b>Sign in</b> </button></a>
-          <button class="btn btn--secondary create_account"> Create account</button>
-
-      </div>
-      </div>
-        
-      </div>  -->
 
     <!-- home section -->
 
@@ -87,6 +80,8 @@
         <div class="left home">
           <img class="image__left"  src="homepage img.jpeg" alt="homepage picture" />
         </div>
+
+        
         <div class="right">
           <div class="right-container">
             <div class="partner__leverage cover">
@@ -99,10 +94,9 @@
               </div>
              </div>
              <div class="singin__btn">
-              <button class="sign__in"> <b>Sign in</b> </button>
+              <a href="signin.html"><button class="sign__in"> <b>Sign in</b> </button></a>
               <button class="create__account"> <b>Create account</b></button>
             </div>
-
           </div>
         </div>
       </div>
@@ -112,16 +106,22 @@
 
     <section id="hello" class="hello__page">
       <div class="hello__wrapper">
-        <div>
 
-          <div class="label-text">Hello there!
-          </div>
-          <div class="subtitle-text">
-            Small and large businesses use Redbiller for their
-             everyday <br>
-              payments and bills.
-            </div>
-        </div>
+        <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+
+     <div>
+
+       <div class="label-text">Hello there!
+       </div>
+       <div class="subtitle-text">
+         Small and large businesses use Redbiller for their
+          everyday <br>
+           payments and bills.
+         </div>
+     </div>
+</div>
 
       </div>
     </section>
@@ -215,7 +215,6 @@
         </div>
 
          <div>
-
            <div class="rightwallet__services rightwalletservices__animate">
             <div class="single__unit">
               <span><i class="fa-solid fa-check"></i></span>
@@ -231,13 +230,9 @@
               <span><i class="fa-solid fa-check"></i></span>
               <p><b>Available over the API</b></p>
             </div>
-          
            </div>
          </div>
-
       </div>
-
-
     </div>
     </section>
 
@@ -308,11 +303,7 @@
               </div>
             </div>
           </div>
-          
-         
-
         </div>
-
       </div>
 
     </section>
@@ -407,7 +398,8 @@
         hamburgerMenu.classList.toggle("open-menu");
       })
     </script>
-
-   
+ <script>
+  AOS.init();
+</script>
   </body>
 </html>
